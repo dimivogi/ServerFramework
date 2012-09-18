@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{40A802B6-43DC-463A-9916-9A715A79A969}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>InstanceServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\SharedFiles\SourceCode;..\SharedFiles\Libraries;..\SharedFiles\Libraries\MySQLConnectorC\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>..\SharedFiles\Libraries;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <SourcePath>..\SharedFiles\SourceCode;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\SharedFiles\SourceCode;..\SharedFiles\Libraries;..\SharedFiles\Libraries\MySQLConnectorC\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>..\SharedFiles\Libraries;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <SourcePath>..\SharedFiles\SourceCode;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>LUA_BUILD_AS_DLL;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\SharedFiles\Libraries\MySQLConnectorC\lib\libmysql.lib;..\SharedFiles\Libraries\Lua\bin\lua.lib;..\SharedFiles\Libraries\pdcurses\pdcurses.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <BuildLog>
+      <Path>$(IntDir)\$(TargetName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>LUA_BUILD_AS_DLL;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\SharedFiles\Libraries\MySQLConnectorC\lib\libmysql.lib;..\SharedFiles\Libraries\Lua\bin\lua.lib;..\SharedFiles\Libraries\pdcurses\pdcurses.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <BuildLog>
+      <Path>$(IntDir)\$(TargetName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SharedFiles\SourceCode\CompletionPort\completionPort.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\ConsoleManager\consoleManager.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\conditionVariable.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\criticalSection.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\slimReadWriterLock.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logEntry.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logException.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logManager.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Lua\luaServerLibrary.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Lua\luaReducedDefaultLibraries.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Lua\luaState.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\PDCursesWindow\pdCursesWindow.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Server\databaseConnection.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Server\server.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Server\socketInfo.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\socket.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\tcpSocket .cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\udpSocket.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Thread\thread.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Utilities\encryption.cpp" />
+    <ClCompile Include="..\SharedFiles\SourceCode\Utilities\timer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SharedFiles\SourceCode\CompletionPort\completionPort.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\ConsoleManager\consoleManager.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\globalDefinitions.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\conditionVariable.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\criticalSection.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\slimReadWriterLock.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logDefinitions.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logEntry.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logException.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logManager.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Lua\luaServerLibrary.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Lua\luaReducedDefaultLibraries.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Lua\luaState.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\PDCursesWindow\pdCursesWindow.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Server\databaseConnection.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Server\server.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Server\socketInfo.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\socket.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\tcpSocket.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\udpSocket.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Thread\thread.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Utilities\encryption.hpp" />
+    <ClInclude Include="..\SharedFiles\SourceCode\Utilities\timer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\bin\instance.lua" />
+    <None Include="..\bin\InstanceServer.config" />
+    <None Include="..\bin\message_codes.lua" />
+    <None Include="..\bin\shared_code.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

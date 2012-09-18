@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Log">
+      <UniqueIdentifier>{8b74035a-9db2-4158-a11b-fdfbad08f604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Log">
+      <UniqueIdentifier>{f45e82cc-305c-46e7-ba5e-d780cdfb9584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lock">
+      <UniqueIdentifier>{fe8a0cbe-568c-4b3f-83da-f4a8bb3e1fa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lock">
+      <UniqueIdentifier>{fc350a10-ca23-4627-bff3-e974201f1500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread">
+      <UniqueIdentifier>{ba3a8894-669b-4c47-8288-fdff90f26750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Thread">
+      <UniqueIdentifier>{45d0407a-5548-4918-ace9-7e11205b6a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Socket">
+      <UniqueIdentifier>{a4653e8c-83b3-4460-a02d-c4900d6fb64c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Socket">
+      <UniqueIdentifier>{794bb7fb-87e6-4bd0-9c3c-d319d5a0ac20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Completion Port">
+      <UniqueIdentifier>{6685874a-121a-4ff1-a86c-c299dc17db8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Completion Port">
+      <UniqueIdentifier>{05f80e2b-c450-4e5c-979f-561e2fae6478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{da2889ac-321c-40b7-8cfa-37e6b2483c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{cc38be32-98e6-438d-b7b6-95940d2ed9f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Console Manager">
+      <UniqueIdentifier>{b14257d5-19e3-49cd-9c1e-bf1029eaa545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Console Manager">
+      <UniqueIdentifier>{4b6084d3-6aa3-48fb-a4e7-a9d1d22b362b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PDCurses Window">
+      <UniqueIdentifier>{6b8e3f56-a800-498d-9949-c23def312e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PDCurses Window">
+      <UniqueIdentifier>{f113b9b1-7bd7-4070-bf3d-10f74cb19d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lua">
+      <UniqueIdentifier>{75ae4274-e86e-46b1-8f5a-435cc7f28306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lua">
+      <UniqueIdentifier>{96320567-b41a-4bcd-a1b4-6e14abc4658a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{f01b1b58-3844-4f5f-bec3-a4799ea20e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{28025768-ea12-4fe1-9fda-b27170c091db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logEntry.cpp">
+      <Filter>Source Files\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logManager.cpp">
+      <Filter>Source Files\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logException.cpp">
+      <Filter>Source Files\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\criticalSection.cpp">
+      <Filter>Source Files\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\slimReadWriterLock.cpp">
+      <Filter>Source Files\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\conditionVariable.cpp">
+      <Filter>Source Files\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Thread\thread.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\udpSocket.cpp">
+      <Filter>Source Files\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\tcpSocket .cpp">
+      <Filter>Source Files\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\socket.cpp">
+      <Filter>Source Files\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\CompletionPort\completionPort.cpp">
+      <Filter>Source Files\Completion Port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\ConsoleManager\consoleManager.cpp">
+      <Filter>Source Files\Console Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\PDCursesWindow\pdCursesWindow.cpp">
+      <Filter>Source Files\PDCurses Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lua\luaState.cpp">
+      <Filter>Source Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lua\luaReducedDefaultLibraries.cpp">
+      <Filter>Source Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Server\server.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lua\luaServerLibrary.cpp">
+      <Filter>Source Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Server\socketInfo.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Utilities\encryption.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Server\databaseConnection.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Utilities\timer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logEntry.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logManager.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logException.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\globalDefinitions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logDefinitions.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\slimReadWriterLock.hpp">
+      <Filter>Header Files\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\criticalSection.hpp">
+      <Filter>Header Files\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\conditionVariable.hpp">
+      <Filter>Header Files\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Thread\thread.hpp">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\socket.hpp">
+      <Filter>Header Files\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\tcpSocket.hpp">
+      <Filter>Header Files\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\udpSocket.hpp">
+      <Filter>Header Files\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\CompletionPort\completionPort.hpp">
+      <Filter>Header Files\Completion Port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\ConsoleManager\consoleManager.hpp">
+      <Filter>Header Files\Console Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\PDCursesWindow\pdCursesWindow.hpp">
+      <Filter>Header Files\PDCurses Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lua\luaState.hpp">
+      <Filter>Header Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lua\luaReducedDefaultLibraries.hpp">
+      <Filter>Header Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Server\server.hpp">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lua\luaServerLibrary.hpp">
+      <Filter>Header Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Server\socketInfo.hpp">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Utilities\encryption.hpp">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Server\databaseConnection.hpp">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Utilities\timer.hpp">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\bin\ShardManagerServer.config" />
+    <None Include="..\bin\shard_manager.lua" />
+    <None Include="..\bin\message_codes.lua" />
+    <None Include="..\bin\shared_code.lua" />
+  </ItemGroup>
+</Project>

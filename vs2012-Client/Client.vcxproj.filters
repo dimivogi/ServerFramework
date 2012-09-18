@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Log">
+      <UniqueIdentifier>{8b74035a-9db2-4158-a11b-fdfbad08f604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Log">
+      <UniqueIdentifier>{f45e82cc-305c-46e7-ba5e-d780cdfb9584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lock">
+      <UniqueIdentifier>{fe8a0cbe-568c-4b3f-83da-f4a8bb3e1fa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lock">
+      <UniqueIdentifier>{fc350a10-ca23-4627-bff3-e974201f1500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread">
+      <UniqueIdentifier>{ba3a8894-669b-4c47-8288-fdff90f26750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Thread">
+      <UniqueIdentifier>{45d0407a-5548-4918-ace9-7e11205b6a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Socket">
+      <UniqueIdentifier>{a4653e8c-83b3-4460-a02d-c4900d6fb64c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Socket">
+      <UniqueIdentifier>{794bb7fb-87e6-4bd0-9c3c-d319d5a0ac20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network Operator">
+      <UniqueIdentifier>{f03fb891-3b2e-4679-9f7a-fd7ab9dad7bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network Operator">
+      <UniqueIdentifier>{8a970f55-458d-4539-a1bb-7c94a8446fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Console Manager">
+      <UniqueIdentifier>{5d90f94d-416d-4ace-bba3-04a9ae1f9194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Console Manager">
+      <UniqueIdentifier>{dff50f8d-0f62-4e5c-8afc-2d7314d10ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PDCurses Window">
+      <UniqueIdentifier>{10243a34-ae24-44dd-849e-ad083877908b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PDCurses Window">
+      <UniqueIdentifier>{e8a56075-12d5-4d33-9f17-fa88343f9aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{a873a58b-32cd-4802-8150-0e7bc31f4d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{3ae8afae-ae99-4538-9fe5-78b643484a3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logEntry.cpp">
+      <Filter>Source Files\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logManager.cpp">
+      <Filter>Source Files\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Log\logException.cpp">
+      <Filter>Source Files\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\criticalSection.cpp">
+      <Filter>Source Files\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\slimReadWriterLock.cpp">
+      <Filter>Source Files\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Lock\conditionVariable.cpp">
+      <Filter>Source Files\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Thread\thread.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\udpSocket.cpp">
+      <Filter>Source Files\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\tcpSocket .cpp">
+      <Filter>Source Files\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Socket\socket.cpp">
+      <Filter>Source Files\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\ConsoleManager\consoleManager.cpp">
+      <Filter>Source Files\Console Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\PDCursesWindow\pdCursesWindow.cpp">
+      <Filter>Source Files\PDCurses Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SharedFiles\SourceCode\Utilities\networkMessageFunctions.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Client\NetworkOperator\networkOperator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logEntry.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logManager.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logException.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\globalDefinitions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Log\logDefinitions.hpp">
+      <Filter>Header Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\slimReadWriterLock.hpp">
+      <Filter>Header Files\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\criticalSection.hpp">
+      <Filter>Header Files\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Lock\conditionVariable.hpp">
+      <Filter>Header Files\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Thread\thread.hpp">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\socket.hpp">
+      <Filter>Header Files\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\tcpSocket.hpp">
+      <Filter>Header Files\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Socket\udpSocket.hpp">
+      <Filter>Header Files\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\ConsoleManager\consoleManager.hpp">
+      <Filter>Header Files\Console Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\PDCursesWindow\pdCursesWindow.hpp">
+      <Filter>Header Files\PDCurses Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SharedFiles\SourceCode\Utilities\networkMessageFunctions.hpp">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Client\NetworkOperator\networkOperator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\bin\Client.config" />
+  </ItemGroup>
+</Project>
