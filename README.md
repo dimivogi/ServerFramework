@@ -29,7 +29,7 @@ The vs2012 folders contain solutions and project files for visual studio 2012, t
 for visual studio 2010.
 
 The bin directory contains the configuration and script files for each server. Theses files can be used as a template if a new type of 
-server needs to be created.
+server needs to be created. If you wish to compile and run the given servers, a database has to be setup and be running during the execution of the programs.
 
 =================
 
